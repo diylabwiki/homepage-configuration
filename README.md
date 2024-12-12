@@ -1,4 +1,5 @@
 # Homepage Configuration
-This is my personal Homepage configuration
+A completed homepage configuration for anyone to use as an example to create their own homepage.
+## Deployment
 
-Original Blogpost: 
+## Configuration
