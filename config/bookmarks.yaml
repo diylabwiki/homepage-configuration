@@ -1,0 +1,96 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/bookmarks
+- Quick:
+    - GMail:
+        - icon: gmail.svg
+          href: https://gmail.com
+          target: _self
+          description: Where important emails hide in plain sight
+    - YouTube:
+        - icon: youtube.svg
+          href: https://youtube.com
+          target: _self
+          description: A 2-minute tutorial turns into a 2-hour binge
+    - Twitch.TV:
+        - icon: twitch.svg
+          href: https://twitch.tv
+          target: _self
+          description: Watch people play games you already own
+    - Facebook:
+        - icon: facebook.svg
+          href: https://www.facebook.com
+          target: _self
+          description: Where your aunt shares cat memes
+    - Instagram:
+        - icon: instagram.svg
+          href: https://www.instagram.com
+          target: _self
+          description: Where life looks better with a filter
+    - X:
+        - icon: x.svg
+          href: https://www.x.com
+          target: _self
+          description: Everyone is a philosopher, journalist, and comedian
+    - Amazon:
+        - icon: amazon.svg
+          href: https://www.amazon.com
+          target: _self
+          description: Online Shopping Monopoly
+- IT:
+    - Hostinger:
+        - icon: https://icons-for-free.com/iff/png/512/Hostinger-1329545820965555584.png
+          href: https://hpanel.hostinger.com
+          target: _self
+          description: Web Hosting
+    - Cloudflare:
+        - icon: cloudflare.svg
+          href: https://dash.cloudflare.com/a4fa935cbb3abd0d28a17d26b5f17ec3
+          target: _self
+          description: SSL and Stuff
+    - Reddit:
+        - icon: reddit.png
+          href: https://www.reddit.com
+          target: _self
+          description: Where experts, trolls, and meme lords unite
+    - Noted.lol:
+        - icon: https://noted.lol/content/images/2023/09/Icon-2.3.png
+          href: https://noted.lol/
+          target: _self
+          description: Noted.lol
+    - Github:
+        - icon: github.svg
+          href: https://github.com
+          target: _self
+          description: Githhub
+    - Dashboard Icons:
+        - icon: github.svg
+          href: https://github.com/walkxcode/dashboard-icons
+          target: _self
+          description: Icon Repository
+- Gaming:
+    - NoPixel:
+        - icon: https://nopixel-minigames.vercel.app/_next/image?url=%2Fnopixel-logo.png&w=64&q=75
+          href: https://www.nopixel.net
+          target: _self
+          description: NoPixel GTA RP
+    - HasRoot:
+        - icon: https://nopixel.hasroot.com/apple-touch-icon.png
+          href: https://nopixel.hasroot.com/
+          target: _self
+          description: NoPixel Streams
+    - Twitch Dashboard:
+        - icon: twitch.svg
+          href: https://dashboard.twitch.tv/u/itsmedeimo/stream-manager
+          target: _self
+          description: My Twitch Dashboard
+    - FossaBot:
+        - icon: https://static-assets.fossabot.com/images/fossabot-1024.png
+          href: https://fossabot.com/c/itsmedeimo/dashboard
+          target: _self
+          description: FossaBot for Twitch
+    - Fiverr:
+        - abbr: F
+          href: https://www.fiverr.com
+          target: _self
+          description: Hire someone to design your logo, write your jingle, or train your cat

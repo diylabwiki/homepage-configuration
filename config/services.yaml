@@ -1,0 +1,154 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/configs/services
+- Calendar:
+    - Media Calendar:
+        widget:
+          type: calendar
+          firstDayInWeek: Monday
+          view: monthly
+          maxEvents: 10
+          showTime: true
+          timezone: America/Los_Angeles
+          integrations:
+            - type: sonarr
+              service_group: WhatBox
+              service_name: Sonarr
+              color: teal
+              params:
+                unmonitored: true
+            - type: radarr
+              service_group: WhatBox
+              service_name: Radarr
+              color: yellow
+              params:
+                unmonitored: true
+- Local Services:
+    - Proxmox:
+        icon: proxmox.svg
+        href: {{HOMEPAGE_VAR_PROXMOX_URL}}
+        target: _self
+        description: Local Proxmox
+        siteMonitor: {{HOMEPAGE_VAR_PROXMOX_URL}}
+    - Nginx Proxy Manager:
+        icon: si-nginxproxymanager-#F15833
+        href: {{HOMEPAGE_VAR_NPM_LOCAL_URL}}
+        target: _self
+        description: Local
+        widget:
+            type: npm
+            url: {{HOMEPAGE_VAR_NPM_LOCAL_URL}}
+            username: {{HOMEPAGE_VAR_NPM_LOCAL_USER}}
+            password: {{HOMEPAGE_VAR_NPM_LOCAL_PASSWORD}}
+    - Dockge:
+        icon: https://dockge.kuma.pet/icon.svg
+        href: {{HOMEPAGE_VAR_DODGE_LOCAL_URL}}
+        target: _self
+        description: Fancy Docker
+    - piHole:
+        icon: si-pihole-#96060C
+        href: {{HOMEPAGE_VAR_PIHOLE_HREF}}
+        target: _self
+        widget:
+            type: pihole
+            url: {{HOMEPAGE_VAR_PIHOLE_URL}}
+            version: 5 # required if running v6 or higher, defaults to 5
+            key: {{HOMEPAGE_VAR_PIHOLE_API_KEY}}
+
+- Cloud:
+    - Nginx Proxy Manager 2:
+        icon: si-nginxproxymanager-#F15833
+        href: {{HOMEPAGE_VAR_NPM_LOCAL_URL}}
+        target: _self
+        description: Cloud
+        widget:
+            type: npm
+            url: {{HOMEPAGE_VAR_NPM_CLOUD_URL}}
+            username: {{HOMEPAGE_VAR_NPM_CLOUD_USER}}
+            password: {{HOMEPAGE_VAR_NPM_CLOUD_PASSWORD}}
+    - Dockge:
+        icon: https://dockge.kuma.pet/icon.svg
+        href: {{HOMEPAGE_VAR_DODGE_CLOUD_URL}}
+        target: _self
+        description: Fancy Docker on the Cloud
+    - Linkwarden:
+        icon: linkwarden.png
+        href: {{HOMEPAGE_VAR_LINKWARDEN_URL}}
+        target: _self
+        description: Bookmarks and more
+        widget:
+            type: linkwarden
+            url: {{HOMEPAGE_VAR_LINKWARDEN_URL}}
+            key: {{HOMEPAGE_VAR_LINKWARDEN_KEY}}
+
+- WhatBox:
+    - Jellyfin:
+        icon: si-jellyfin
+        href: {{HOMEPAGE_VAR_JELLYFIN_URL}}
+        target: _self
+        description: Media Player
+        widget:
+          type: jellyfin
+          url: {{HOMEPAGE_VAR_JELLYFIN_URL}}
+          key: {{HOMEPAGE_VAR_JELLYFIN_API}}
+          enableBlocks: true
+          enableNowPlaying: true
+    - Prowlarr:
+        icon: prowlarr.svg
+        href: {{HOMEPAGE_VAR_PROWLAR_URL}}
+        target: _self
+        description: Index Pull Automation
+        widget:
+          type: prowlarr
+          url: {{HOMEPAGE_VAR_PROWLAR_URL}}
+          key: {{HOMEPAGE_VAR_PROWLAR_API}}
+          enableQueue: false
+    - Radarr:
+        icon: radarr.svg
+        href: {{HOMEPAGE_VAR_RADARR_URL}}
+        target: _self
+        description: Movie Pull Automation
+        widget:
+          type: radarr
+          url: {{HOMEPAGE_VAR_RADARR_URL}}
+          key: {{HOMEPAGE_VAR_RADARR_API}}
+          enableQueue: false
+    - Sonarr:
+        icon: sonarr.svg
+        href: {{HOMEPAGE_VAR_SONARR_URL}}
+        target: _self
+        description: TV Pull Automation
+        widget:
+          type: sonarr
+          url: {{HOMEPAGE_VAR_SONARR_URL}}
+          key: {{HOMEPAGE_VAR_SONARR_KEY}}
+          enableQueue: false
+
+- Monitor:
+    - My Speed Local:
+        icon: myspeed.svg
+        href: {{HOMEPAGE_VAR_MYSPEED_LOCAL_URL}}
+        target: _self
+        description: My Speed Local
+        widget:
+          type: myspeed
+          url: {{HOMEPAGE_VAR_MYSPEED_LOCAL_URL}}
+          password: {{HOMEPAGE_VAR_MYSPEED_LOCAL_PASSWORD}}
+    - Uptime Kuma:
+        icon: uptime-kuma.svg
+        href: {{HOMEPAGE_VAR_UPTIME_KUMA_URL}}
+        target: _self
+        description: Status Monitor
+        widget:
+          type: uptimekuma
+          url: {{HOMEPAGE_VAR_UPTIME_KUMA_URL}}
+          slug: homepage
+    - My Speed Cloud:
+        icon: myspeed.svg
+        href: {{HOMEPAGE_VAR_MYSPEED_CLOUD_URL}}
+        target: _self
+        description: My Speed Cloud
+        widget:
+          type: myspeed
+          url: {{HOMEPAGE_VAR_MYSPEED_CLOUD_URL}}
+          password: {{HOMEPAGE_VAR_MYSPEED_CLOUD_PASSWORD}}
